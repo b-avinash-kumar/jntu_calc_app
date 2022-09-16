@@ -9,7 +9,7 @@ public class Calculator {
 		//comment line
 		return num1 - num2;
 	}
-
+//comments
 	public double doMul(double num1, double num2) {
 		return num1 * num2;
 	}
