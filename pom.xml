@@ -126,8 +126,8 @@
 	<distributionManagement>
 		<repository>
 			<id>artifactory</id>
-			<name>Calc_Dev_Snapshot</name>
-			<url>http://localhost:8081/artifactory/Calc_Dev_Snapshot</url>
+			<name>calcdev_snapshot</name>
+			<url>http://localhost:8082/artifactory/calcdev_snapshot</url>
 		</repository>
 	</distributionManagement>
 </project>
