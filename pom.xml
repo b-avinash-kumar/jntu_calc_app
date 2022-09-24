@@ -64,6 +64,31 @@
 						</archive>
 					</configuration>
 				</plugin>
+<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>build-helper-maven-plugin</artifactId>
+    <version>1.8</version>
+    <executions>
+      <execution>
+        <id>attach-artifacts</id>
+        <phase>package</phase>
+        <goals>
+          <goal>attach-artifact</goal>
+        </goals>
+        <configuration>
+          <artifacts>
+            <artifact>
+              <file>x1.xml</file>
+              <type>xml</type>
+              <classifier>optional</classifier>
+            </artifact>
+            ...
+          </artifacts>
+        </configuration>
+      </execution>
+    </executions>
+  </plugin>
+
 
 				<plugin>
 					<groupId>org.jacoco</groupId>
