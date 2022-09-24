@@ -5,6 +5,7 @@
 
 	<groupId>ETA_SB</groupId>
 	<artifactId>jntu_calc_application</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>jntu_calc_application</name>
