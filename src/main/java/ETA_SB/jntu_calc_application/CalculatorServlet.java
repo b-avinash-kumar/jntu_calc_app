@@ -29,22 +29,22 @@ public class CalculatorServlet extends HttpServlet {
     	}
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
-		String n1 = request.getParameter("no1");
-		String n2 = request.getParameter("no2");
+		int n1 = Integer.parseInt(request.getParameter("num1"));
+		int n2 = Integer.parseInt(request.getParameter("num2"));
 		String opt = request.getParameter("operations");
 		
 		switch(opt) {
 		case "add" : 
-			res = new Calculator().doAdd(Double.parseDouble(n1), Double.parseDouble(n2));
+			res = new Calculator().doAdd(n1,n2);
 			break;
 		case "sub" : 
-			res = new Calculator().doSub(Integer.parseInt(n1), Integer.parseInt(n2));
+			res = new Calculator().doSub(n1,n2);
 			break;
 		case "mul" : 
-			res = new Calculator().doMul(Integer.parseInt(n1), Integer.parseInt(n2));
+			res = new Calculator().doMul(n1,n2);
 			break;	
 		case "div" : 
-			res = new Calculator().doDiv(Integer.parseInt(n1), Integer.parseInt(n2));
+			res = new Calculator().doDiv(n1,n2);
 			break;
 		}
 		out.println(res);
