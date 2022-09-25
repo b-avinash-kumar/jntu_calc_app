@@ -31,7 +31,7 @@ public class CalculatorServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		String n1 = request.getParameter("no1");
 		String n2 = request.getParameter("no2");
-		String opt = request.getParameter("opt");
+		String opt = request.getParameter("operations");
 		
 		switch(opt) {
 		case "add" : 
