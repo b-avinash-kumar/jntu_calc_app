@@ -31,19 +31,19 @@ public class CalculatorServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		String n1 = request.getParameter("no1");
 		String n2 = request.getParameter("no2");
-		int opt = Integer.parseInt(request.getParameter("opt"));
+		String opt = request.getParameter("opt");
 		
 		switch(opt) {
-		case 1 : 
+		case "add" : 
 			res = new Calculator().doAdd(Integer.parseInt(n1), Integer.parseInt(n2));
 			break;
-		case 2 : 
+		case "sub" : 
 			res = new Calculator().doSub(Integer.parseInt(n1), Integer.parseInt(n2));
 			break;
-		case 3 : 
+		case "mul" : 
 			res = new Calculator().doMul(Integer.parseInt(n1), Integer.parseInt(n2));
 			break;	
-		case 4 : 
+		case "div" : 
 			res = new Calculator().doDiv(Integer.parseInt(n1), Integer.parseInt(n2));
 			break;
 		}
