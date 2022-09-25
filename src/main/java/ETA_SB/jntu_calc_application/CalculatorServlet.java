@@ -35,7 +35,7 @@ public class CalculatorServlet extends HttpServlet {
 		
 		switch(opt) {
 		case "add" : 
-			res = new Calculator().doAdd(Integer.parseInt(n1), Integer.parseInt(n2));
+			res = new Calculator().doAdd(Double.parseDouble(n1), Double.parseDouble(n2));
 			break;
 		case "sub" : 
 			res = new Calculator().doSub(Integer.parseInt(n1), Integer.parseInt(n2));
